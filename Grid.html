@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Challenge</title>
+    <style>
+      * {
+        background-color: beige;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(1000px, auto);
+      }
+
+      .nestedItem {
+        display: grid;
+        grid-gap: 10px;
+      }
+
+      .items {
+        background-color: rgb(9, 92, 64);
+        border: 1px solid rgb(249, 249, 249);
+        border-radius: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nestedItem">
+        <div class="items">dabba 1</div>
+      </div>
+
+      <div class="nestedItem">
+        <div class="items" id="item2">dabba 2</div>
+        <div class="items" id="item3">dabba 3</div>
+      </div>
+
+      <div class="nestedItem">
+        <div class="items" id="item4">dabba 4</div>
+        <div class="items" id="item5">dabba 5</div>
+        <div class="items" id="item6">dabba 6</div>
+      </div>
+
+      <div class="nestedItem">
+        <div class="items" id="item7">dabba 7</div>
+        <div class="items" id="item8">dabba 8</div>
+        <div class="items" id="item9">dabba 9</div>
+        <div class="items" id="item10">dabba 10</div>
+      </div>
+
+      <div class="nestedItem">
+        <div class="items" id="item11">dabba 11</div>
+        <div class="items" id="item12">dabba 12</div>
+        <div class="items" id="item13">dabba 13</div>
+        <div class="items" id="item14">dabba 14</div>
+        <div class="items" id="item15">dabba 15</div>
+        <div class="items" id="item16">dabba 16</div>
+      </div>
+
+      <div class="nestedItem">
+        <div class="items" id="item17">dabba 17</div>
+        <div class="items" id="item18">dabba 18</div>
+        <div class="items" id="item19">dabba 19</div>
+        <div class="items" id="item20">dabba 20</div>
+        <div class="items" id="item21">dabba 21</div>
+        <div class="items" id="item22">dabba 22</div>
+        <div class="items" id="item23">dabba 23</div>
+        <div class="items" id="item24">dabba 24</div>
+        <div class="items" id="item25">dabba 25</div>
+        <div class="items" id="item26">dabba 26</div>
+        <div class="items" id="item27">dabba 27</div>
+        <div class="items" id="item28">dabba 28</div>
+      </div>
+    </div>
+  </body>
+</html>

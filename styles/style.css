@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+
+header {
+  padding: 60px;
+  background-color: rgb(17, 124, 143);
+}
+
+nav {
+  background-color: #333;
+  display: flex;
+}
+
+.flex-right {
+  margin-left: auto;
+}
+
+.menu-btn:hover {
+  background-color: white;
+  color: black;
+}
+nav a {
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  float: left;
+  color: white;
+}
+
+h2 {
+  padding: 20px;
+}
+
+section:nth-child(even) {
+  background-color: rgb(255, 255, 255);
+}
+
+section {
+  padding: 40px;
+  min-height: 40vh;
+  height: 100%;
+  text-align: center;
+}
+
+video {
+  padding: 10px;
+}
+
+img {
+  padding: 0px 10px;
+}
+h2 {
+  padding-bottom: 40px;
+}
+section h5 {
+  margin: 40px;
+}
+
+section h2 span {
+  padding: 15px 55px;
+  color: white;
+  border-radius: 20px;
+  background: linear-gradient(
+    90deg,
+    rgb(217, 215, 246) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+footer {
+  background-color: #333;
+  display: flex;
+}
+
+footer a {
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  float: left;
+  color: white;
+}
+
+.carousel-cell {
+  width: 66%;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.carousel-cell video {
+  max-width: 100%;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 */
+  position: relative;
+  width: 100%;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.Author {
+  color: blue;
+  font-size: medium;
+}
+
+.sm-handle a {
+  background-color: rgb(222, 227, 236);
+  padding: 15px 15px;
+  margin: 5px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.sm-handle a:hover {
+  background-color: cadetblue;
+  color: #333;
+}
+
+.sm-handle a i {
+  margin: 5px;
+}
+
+.yt-handle {
+  color: #ff0000;
+}
+
+.ln-handle {
+  color: #0077b5;
+}
+
+.inst-handle {
+  color: #c13584;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    padding: 15px 0px;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 15px 0px;
+  }
+
+  .flex-right {
+    margin-left: 0;
+  }
+}

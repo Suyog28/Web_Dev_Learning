@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Challenge3</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+
+      .container-row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .side {
+        flex: 30%;
+        background-color: aquamarine;
+        padding: 20px;
+        height: 100vh;
+      }
+
+      .main {
+        flex: 70%;
+        background-color: rgb(233, 241, 241);
+      }
+
+      .header {
+        padding: 60px;
+        text-align: center;
+        background-color: rgb(205, 185, 207);
+        color: rgb(12, 15, 15);
+      }
+      .section {
+        padding: 60px;
+        text-align: center;
+        background-color: rgb(160, 201, 160);
+        color: rgb(6, 18, 18);
+        height: 60vh;
+      }
+      .footer {
+        padding: 60px;
+        text-align: center;
+        background-color: rgb(201, 177, 204);
+        color: rgb(10, 20, 20);
+      }
+
+      @media screen and (max-width: 700px) {
+        .container-row {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-row">
+      <div class="side">
+        <h2>Nav</h2>
+      </div>
+      <div class="main">
+        <div class="header">
+          <h2>Header</h2>
+        </div>
+        <div class="section">
+          <h2>Article</h2>
+        </div>
+        <div class="footer">
+          <h2>Footer</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

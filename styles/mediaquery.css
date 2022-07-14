@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+.mainbox {
+  background-color: darkgrey;
+  overflow: hidden;
+  text-align: center;
+}
+
+h1 {
+  color: rgb(151, 151, 215);
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1480px) {
+  .box {
+    background-color: rgb(225, 218, 231);
+    font-size: 30px;
+    border: 1px solid goldenrod;
+    padding: 50px 50px;
+    float: left;
+    width: 25%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1479px) and (min-width: 641px) {
+  .box {
+    background-color: rgb(86, 20, 143);
+    font-size: 30px;
+    border: 1px solid rgb(230, 227, 221);
+    padding: 50px 50px;
+    float: left;
+    width: 50%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 640px) and (min-width: 200px) {
+  .box {
+    background-color: rgb(239, 219, 240);
+    font-size: 20px;
+    border: 1px solid rgb(235, 199, 208);
+    padding: 30px 30px;
+    float: left;
+    width: 100%;
+    text-align: center;
+  }
+}

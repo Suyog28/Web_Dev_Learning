@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Grid Challenge 2</title>
+    <style>
+     * {
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    font-size: 30px;
+  }
+  .main-container {
+    margin: 18px;
+    padding: 20px;
+    box-shadow: .2em .7em 8em #ff002bf5;
+    border-radius: 6px;
+    background-color: hsla(0, 0%, 0%, 0.856);
+  }
+  .heading{
+      margin-bottom: 40px;
+      font-size: 40px;
+      color: white;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-gap: 1.2%;
+    height: 650px;
+  }
+  .m1,
+  .nav,
+  .mid-grid,
+  .header,
+  .footer{
+    display: grid;
+    border-radius: 3px;
+
+  }
+  .m1{
+    grid-template-rows:1.5fr 6fr 1.5fr ;
+    grid-gap: 1.2%;
+    
+  }
+  .mid-grid {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    grid-gap: 1.2%;
+  }
+  .child{
+    color: #ffffff;
+    background-color: #ff002bbb;
+    border-radius: 10px;
+  }
+  .child:hover{
+      margin: 2px;
+      background-color: #ff002bea;
+      box-shadow: 2px 3px 6px #ffffff;
+      cursor: pointer;
+  }
+    </style>
+  </head>
+  </head>
+<body >
+<div class="main-container">
+      <div class="heading">Grid-Challenge-2</div>
+      <div class="container">
+        <div class="nav">
+          <div class="child">Nav</div>
+        </div>
+        <div class="m1">
+          <div class="header">
+            <div class="child">Header</div>
+          </div>
+          <div class="mid-grid">
+            <div class="child">Artical</div>
+            <div class="child">Ads</div>
+          </div>
+          <div class="footer">
+            <div class="child">Footer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+ 
+</html>
